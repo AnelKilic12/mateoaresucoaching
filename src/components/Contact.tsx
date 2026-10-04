@@ -92,6 +92,11 @@ export function Contact() {
           Message
           <textarea name="message" rows={5} required placeholder="Vos objectifs, votre disponibilité, vos questions…" />
         </label>
+        <p className="form-privacy full">
+          En envoyant ce message, ces informations sont transmises afin de
+          répondre à la demande. Le détail est dans la{" "}
+          <a href="#confidentialite">politique de confidentialité</a>.
+        </p>
         <button className="btn btn-primary full" type="submit" disabled={status === "sending"}>
           {status === "sending" ? "Envoi en cours…" : "Envoyer un message"}
         </button>

@@ -14,6 +14,11 @@ export function Footer() {
           <a href="#programmes">Programmes</a>
         </div>
       </div>
+      <nav className="footer-legal" aria-label="Informations légales">
+        <a href="#mentions">Mentions légales</a>
+        <a href="#confidentialite">Confidentialité</a>
+        <a href="#cookies">Cookies</a>
+      </nav>
       <div className="footer-partner">
         <a
           className="footer-partner-link"
