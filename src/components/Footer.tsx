@@ -1,6 +1,6 @@
 import { Logo } from "./Logo";
 import { contact } from "../data";
-import evoswissLogo from "../assets/powered-by-evoswiss.png";
+import evoswissMark from "../assets/evoswiss-mark.png";
 
 export function Footer() {
   return (
@@ -14,11 +14,14 @@ export function Footer() {
           <a href="#programmes">Programmes</a>
         </div>
       </div>
-      <nav className="footer-legal" aria-label="Informations légales">
-        <a href="#mentions">Mentions légales</a>
-        <a href="#confidentialite">Confidentialité</a>
-        <a href="#cookies">Cookies</a>
-      </nav>
+      <div className="footer-meta">
+        <p className="footer-copy">© 2026 Mateo Aresu Coaching</p>
+        <nav className="footer-legal" aria-label="Informations légales">
+          <a href="#mentions">Mentions légales</a>
+          <a href="#confidentialite">Confidentialité</a>
+          <a href="#cookies">Cookies</a>
+        </nav>
+      </div>
       <div className="footer-partner">
         <a
           className="footer-partner-link"
@@ -26,12 +29,19 @@ export function Footer() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <img
-            src={evoswissLogo}
-            alt="Powered by Evoswiss"
-            width={724}
-            height={249}
-          />
+          <span className="evo-badge">
+            <img
+              className="evo-mark"
+              src={evoswissMark}
+              alt=""
+              width={51}
+              height={51}
+            />
+            <span className="evo-copy">
+              <span>Réalisé avec</span>
+              <strong>Evoswiss</strong>
+            </span>
+          </span>
         </a>
       </div>
     </footer>
