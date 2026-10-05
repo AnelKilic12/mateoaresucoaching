@@ -78,11 +78,11 @@ export const programs = [
     payment: "Paiement en 3 fois ou 300 CHF / mois",
     featured: false,
     items: [
-      "Bilan complet en présentiel à Genève",
+      "Bilan complet en présentiel à Genève ou en ligne",
       "Programme personnalisé et évolutif",
       "Suivi hebdomadaire par message",
       "Accès à l’application de suivi en ligne",
-      "Bilan final en présentiel",
+      "Bilan final en présentiel ou en ligne",
     ],
   },
   {
@@ -94,13 +94,13 @@ export const programs = [
     payment: "Paiement en 6 fois ou 250 CHF / mois",
     featured: true,
     items: [
-      "Bilan complet en présentiel à Genève",
+      "Bilan complet en présentiel à Genève ou en ligne",
       "Programme personnalisé et évolutif",
       "Suivi hebdomadaire prioritaire + appel mensuel",
       "Accès à l’application de suivi en ligne",
-      "Point intermédiaire en présentiel",
+      "Point intermédiaire en présentiel ou en ligne",
       "Accompagnement sur les habitudes de vie",
-      "Bilan final en présentiel",
+      "Bilan final en présentiel ou en ligne",
     ],
   },
 ];
@@ -113,8 +113,8 @@ export const steps = [
   },
   {
     n: "02",
-    title: "Bilan en présentiel",
-    text: "Je vous évalue à Genève : mobilité, posture, force et objectifs détaillés.",
+    title: "Bilan en présentiel ou en ligne",
+    text: "Je vous évalue à Genève ou en ligne : mobilité, posture, force et objectifs détaillés.",
   },
   {
     n: "03",
