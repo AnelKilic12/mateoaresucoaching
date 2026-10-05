@@ -1,5 +1,7 @@
+import heroPhoto from "./assets/mateo-hero.jpg";
+
 export const images = {
-  hero: "https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?auto=format&fit=crop&w=1600&q=80",
+  hero: heroPhoto,
   portrait:
     "https://images.unsplash.com/photo-1579758629938-03607ccdbaba?auto=format&fit=crop&w=1200&q=80",
   session:

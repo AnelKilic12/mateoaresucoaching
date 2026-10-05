@@ -46,7 +46,7 @@ export function Hero() {
       <div className="hero-visual">
         <img
           src={images.hero}
-          alt="Entraînement de force en salle"
+          alt="Mateo Aresu, coach sportif"
           width={900}
           height={1100}
         />
