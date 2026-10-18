@@ -113,8 +113,10 @@ export const steps = [
   },
   {
     n: "02",
-    title: "Bilan en présentiel ou en ligne",
-    text: "Je vous évalue à Genève ou en ligne : mobilité, posture, force et objectifs détaillés.",
+    title: "Questionnaire & Profiling",
+    text: "Vous remplissez un questionnaire de santé complet : antécédents, rythme de vie et objectifs. Cela me permet de cibler précisément votre besoin et de garantir une pratique en toute sécurité.",
+    href: "#questionnaire",
+    cta: "Remplir le questionnaire",
   },
   {
     n: "03",

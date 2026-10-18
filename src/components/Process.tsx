@@ -17,6 +17,11 @@ export function Process() {
             <span>{step.n}</span>
             <h3>{step.title}</h3>
             <p>{step.text}</p>
+            {"href" in step && step.href && "cta" in step && step.cta ? (
+              <a className="btn btn-secondary step-cta" href={step.href}>
+                {step.cta}
+              </a>
+            ) : null}
           </li>
         ))}
       </ol>

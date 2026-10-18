@@ -34,7 +34,7 @@ function Mentions() {
     <>
       <p className="eyebrow">Informations</p>
       <h1>Mentions légales.</h1>
-      <p className="legal-updated">Dernière mise à jour : 4 octobre 2026.</p>
+      <p className="legal-updated">Dernière mise à jour : 18 octobre 2026.</p>
       <h2>Éditeur</h2>
       <p>
         Ce site présente l’activité de Mateo Aresu, coach sportif certifié,
@@ -51,6 +51,12 @@ function Mentions() {
         et les prix indiquent l’offre proposée au moment où vous consultez le
         site. Un accompagnement commence après un échange, pas à la simple
         lecture de la page.
+      </p>
+      <p>
+        Le site propose aussi un questionnaire de santé (« Questionnaire &amp;
+        Profiling ») pour préparer l’accompagnement. Ce questionnaire sert à
+        cibler le besoin et à limiter les risques ; il ne remplace pas un avis
+        médical.
       </p>
       <h2>Hébergement</h2>
       <p>
@@ -78,9 +84,15 @@ function Mentions() {
       <h2>Responsabilité</h2>
       <p>
         Les informations sont données pour présenter le coaching. Elles ne
-        remplacent pas un bilan. Le même résultat n’est pas garanti à chaque
-        personne : la progression dépend du point de départ, de la régularité
-        et de la santé de chacun.
+        remplacent pas un avis médical ni un bilan clinique. Le questionnaire
+        de santé aide à adapter l’entraînement ; il n’établit pas de diagnostic.
+        Le même résultat n’est pas garanti à chaque personne : la progression
+        dépend du point de départ, de la régularité et de la santé de chacun.
+      </p>
+      <p>
+        Le détail du traitement des données personnelles et de santé figure
+        dans la{" "}
+        <a href="#confidentialite">politique de confidentialité</a>.
       </p>
     </>
   );
@@ -91,12 +103,13 @@ function Confidentialite() {
     <>
       <p className="eyebrow">Données personnelles</p>
       <h1>Politique de confidentialité.</h1>
-      <p className="legal-updated">Dernière mise à jour : 4 octobre 2026.</p>
+      <p className="legal-updated">Dernière mise à jour : 18 octobre 2026.</p>
       <p>
         Cette page explique quelles données le site collecte, pourquoi, et
-        comment les demander ou les faire effacer. Elle s’applique au site et
-        au formulaire de contact. Elle tient compte de la loi fédérale suisse
-        sur la protection des données. Pour une demande envoyée depuis l’Union
+        comment les demander ou les faire effacer. Elle s’applique au site, au
+        formulaire de contact et au questionnaire de santé (« Questionnaire
+        &amp; Profiling »). Elle tient compte de la loi fédérale suisse sur la
+        protection des données. Pour une demande envoyée depuis l’Union
         européenne, les droits prévus par le règlement général sur la
         protection des données s’appliquent aussi.
       </p>
@@ -108,7 +121,7 @@ function Confidentialite() {
         <br />
         Téléphone : <a href={contact.phoneHref}>{contact.phone}</a>
       </p>
-      <h2>Données envoyées via le site</h2>
+      <h2>Formulaire de contact</h2>
       <p>Le formulaire de contact demande :</p>
       <ul>
         <li>votre nom</li>
@@ -121,6 +134,43 @@ function Confidentialite() {
         Ces informations servent à répondre à la demande, à proposer le cas
         échéant l’échange découverte de 30 minutes, puis à assurer le suivi si
         un coaching démarre.
+      </p>
+      <h2>Questionnaire de santé</h2>
+      <p>
+        Le questionnaire accessible depuis la page{" "}
+        <a href="#questionnaire">Questionnaire &amp; Profiling</a> peut
+        contenir des données personnelles et des données de santé (données
+        sensibles). Il peut notamment demander :
+      </p>
+      <ul>
+        <li>identité et coordonnées (nom, email, téléphone, âge, sexe)</li>
+        <li>modalité souhaitée (présentiel, en ligne ou les deux)</li>
+        <li>objectifs sportifs</li>
+        <li>
+          antécédents : blessures, douleurs, opérations, pathologies,
+          médicaments, contre-indications
+        </li>
+        <li>
+          rythme de vie : activité professionnelle, niveau d’activité,
+          expérience, sommeil, stress, disponibilité, alimentation
+        </li>
+      </ul>
+      <p>
+        Finalité : cibler précisément le besoin, adapter le programme et
+        favoriser une pratique en toute sécurité. Ces données ne servent pas à
+        de la publicité et ne sont pas revendues.
+      </p>
+      <p>
+        Base du traitement : votre consentement, donné en cochant la case
+        prévue avant l’envoi. Vous pouvez retirer ce consentement à tout
+        moment en écrivant à{" "}
+        <a href={`mailto:${contact.email}`}>{contact.email}</a>. Le retrait
+        n’affecte pas le traitement déjà effectué avant le retrait.
+      </p>
+      <p>
+        Le questionnaire ne remplace pas un avis médical. N’y joignez pas de
+        documents médicaux complets (dossiers, imagerie) si ce n’est pas
+        nécessaire ; les éléments utiles au coaching suffisent.
       </p>
       <p>
         Un message envoyé directement par email, par téléphone ou par WhatsApp
@@ -137,14 +187,15 @@ function Confidentialite() {
       <p>
         Les polices sont chargées depuis Google Fonts et certaines photos
         depuis Unsplash. Votre navigateur envoie alors une requête à ces
-        services, qui peuvent voir votre adresse IP. Le contenu du formulaire
-        ne leur est pas transmis.
+        services, qui peuvent voir votre adresse IP. Le contenu des
+        formulaires ne leur est pas transmis.
       </p>
       <h2>Qui reçoit les données</h2>
       <p>
-        Le formulaire est transmis par FormSubmit (formsubmit.co), uniquement
-        pour déposer le message dans la boîte {contact.email}. Le message est
-        ensuite lu depuis cette boîte.
+        Le formulaire de contact et le questionnaire sont transmis par
+        FormSubmit (formsubmit.co), uniquement pour déposer le contenu dans la
+        boîte {contact.email}. Les messages et réponses sont ensuite lus
+        depuis cette boîte.
       </p>
       <p>
         WhatsApp, si vous ouvrez le lien, est un service de Meta. La
@@ -157,10 +208,15 @@ function Confidentialite() {
       </p>
       <h2>Durée</h2>
       <p>
-        Les messages sont conservés le temps de traiter la demande. Si un
-        coaching démarre, les échanges utiles au suivi sont conservés pendant
-        la durée de l’accompagnement, puis supprimés quand ils ne sont plus
-        nécessaires, sauf obligation légale de les conserver plus longtemps.
+        Les messages de contact et les questionnaires sans suite sont
+        conservés le temps de traiter la demande, puis effacés lorsqu’ils ne
+        sont plus nécessaires.
+      </p>
+      <p>
+        Si un coaching démarre, les informations utiles au suivi, y compris
+        celles du questionnaire, sont conservées pendant la durée de
+        l’accompagnement, puis supprimées quand elles ne sont plus
+        nécessaires, sauf obligation légale de les garder plus longtemps.
       </p>
       <h2>Vos droits</h2>
       <p>Il est possible de demander :</p>
@@ -170,6 +226,7 @@ function Confidentialite() {
         <li>leur effacement</li>
         <li>la limitation de leur utilisation</li>
         <li>l’opposition à un usage qui ne serait plus nécessaire</li>
+        <li>le retrait du consentement pour le questionnaire</li>
         <li>une copie dans un format courant</li>
       </ul>
       <p>
@@ -189,10 +246,10 @@ function Confidentialite() {
       </p>
       <h2>Sécurité</h2>
       <p>
-        L’envoi du formulaire passe par une connexion chiffrée. Aucun site
-        n’est exempt de risque : n’envoyez pas d’information médicale détaillée
-        dans le premier message. Le bilan, s’il a lieu, se fait dans un cadre
-        plus direct.
+        L’envoi des formulaires passe par une connexion chiffrée. Aucun site
+        n’est exempt de risque. Les données de santé du questionnaire sont
+        traitées avec la même attention que les autres échanges liés au
+        coaching : elles restent limitées à la finalité indiquée ci-dessus.
       </p>
     </>
   );
@@ -203,7 +260,7 @@ function Cookies() {
     <>
       <p className="eyebrow">Traceurs</p>
       <h1>Politique de cookies.</h1>
-      <p className="legal-updated">Dernière mise à jour : 4 octobre 2026.</p>
+      <p className="legal-updated">Dernière mise à jour : 18 octobre 2026.</p>
       <p>
         Un cookie est un petit fichier déposé sur votre appareil par un site.
         Ce site n’en dépose pas. Il n’y a pas de mesure d’audience, pas de
@@ -244,7 +301,8 @@ function Cookies() {
         réapparaître.
       </p>
       <p>
-        Le détail des données du formulaire est dans la{" "}
+        Le détail des données du formulaire de contact et du questionnaire de
+        santé est dans la{" "}
         <a href="#confidentialite">politique de confidentialité</a>.
       </p>
     </>
