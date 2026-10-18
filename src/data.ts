@@ -16,6 +16,8 @@ export const images = {
 
 export const contact = {
   email: "mateo.aresu@gmail.com",
+  /** FormSubmit endpoint (replaces the raw email in form posts). */
+  formSubmitId: "d774bacff41e5d4de3c6d71e1550bf1b",
   phone: "+41 78 900 99 03",
   phoneHref: "tel:+41789009903",
   whatsapp: "https://wa.me/41789009903",

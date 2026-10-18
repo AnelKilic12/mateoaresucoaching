@@ -17,7 +17,7 @@ export function Questionnaire() {
     setStatus("sending");
     try {
       const response = await fetch(
-        `https://formsubmit.co/ajax/${contact.email}`,
+        `https://formsubmit.co/ajax/${contact.formSubmitId}`,
         {
           method: "POST",
           body: data,
