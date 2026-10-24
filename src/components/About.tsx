@@ -8,7 +8,7 @@ export function About() {
       <div className="about-media">
         <img
           src={images.portrait}
-          alt="Coach en séance, focus et technique"
+          alt="Séance de tirage vertical en salle"
           width={720}
           height={900}
         />

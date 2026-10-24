@@ -1,9 +1,9 @@
 import heroPhoto from "./assets/mateo-hero.jpg";
+import aboutPhoto from "./assets/about-session.jpg";
 
 export const images = {
   hero: heroPhoto,
-  portrait:
-    "https://images.unsplash.com/photo-1579758629938-03607ccdbaba?auto=format&fit=crop&w=1200&q=80",
+  portrait: aboutPhoto,
   session:
     "https://images.unsplash.com/photo-1517838277536-f5f99be501cd?auto=format&fit=crop&w=1200&q=80",
   gym: "https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=1600&q=80",
